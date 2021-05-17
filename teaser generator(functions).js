@@ -6,22 +6,25 @@ let phrases = [
 ];
 let randomPhrase = phrases[Math.floor(Math.random() * phrases.length)]
 
-console.log(randomPhrase)
+console.log(randomPhrase);
 // task 2
-let bodyPart = ['рука', 'нога', 'голова', 'нос']
-let adjective = ['вонючая', "грустная", "невесёлая"]
-let animalPart = ['лапка', "нос", "ухо"]
-let animal = ["мухи", "выдры", "свиньи", "мыши",]
+
 
 let randomWordGenerator = function (words) {
-    return Math.floor(Math.random() * words.length)
+    return Math.floor(Math.random() * words.length);
 }
+let randomInsultGenerator = function () {
+    let bodyPart = ['рука', 'нога', 'голова', 'нос']
+    let adjective = ['вонючая', "грустная", "невесёлая"]
+    let animalPart = ['лапка', "нос", "ухо"]
+    let animal = ["мухи", "выдры", "свиньи", "мыши",]
 
-let fullPhrase = 'У тебя ' + bodyPart[randomWordGenerator(bodyPart)] +
-    ' ещё более ' + adjective[randomWordGenerator(adjective)] + ", чем " +
-    animalPart[randomWordGenerator(animalPart)] + " у " + animal[randomWordGenerator(animal.length)];
-
-console.log(fullPhrase)
+    return 'У тебя ' + bodyPart[randomWordGenerator(bodyPart)] +
+        ' ещё более ' + adjective[randomWordGenerator(adjective)] + ", чем " +
+        animalPart[randomWordGenerator(animalPart)] + " у " + animal[randomWordGenerator(animal)]
+};
+alert(randomInsultGenerator());
+alert(randomInsultGenerator());
 
 // task 3
 let randomAdjectives_2 = adjective[Math.floor(Math.random() * adjective.length)] + ","
