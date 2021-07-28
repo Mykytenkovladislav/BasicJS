@@ -1,15 +1,3 @@
-// Task 1
-var add = function (a, b) {
-    return a + b;
-};
-
-function multiply(a, b) {
-    return a * b;
-}
-
-console.log(multiply(36325, 9824))
-alert(add(multiply(36325, 9824), 777));
-
 // Task 2
 
 function areArraysSame(a, b) {
