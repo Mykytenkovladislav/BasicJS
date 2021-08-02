@@ -17,23 +17,68 @@
 //     console.log(error.stack);
 // }
 
-// Task 2
+// // Task 2
+//
+// function checkAge(age) {
+//     if (age === '') {
+//         throw Error('Empty string');
+//     } else if (isNaN(age)) {
+//         throw new TypeError('Not a number');
+//     } else if (parseInt(age) < 14) {
+//         throw new RangeError('Your age is less than 14');
+//     }
+//     return true
+// }
+//
+// try {
+//     if (checkAge('16')) {
+//         alert('Access granted');
+//     }
+// } catch (error) {
+//     alert(error.name + '\n' + error.message);
+// }
 
-function checkAge(age) {
-    if (age === '') {
-        throw Error('Empty string')
-    } else if (isNaN(age)) {
-        throw new TypeError('Not a number');
-    } else if (parseInt(age) < 14) {
-        throw new RangeError('Your age is less than 14')
+// Task 3
+class MonthException {
+    constructor(message) {
+        this.message = message;
+        this.name = 'MonthException'
     }
-    return true
+}
+
+function showMonthName(month) {
+    switch (month) {
+        case 1:
+            return 'January'
+        case 2:
+            return 'February'
+        case 3:
+            return 'March'
+        case 4:
+            return 'April'
+        case 5:
+            return 'May'
+        case 6:
+            return 'June'
+        case 7:
+            return 'July'
+        case 8:
+            return 'August'
+        case 9:
+            return 'September'
+        case 10:
+            return 'October'
+        case 11:
+            return 'November'
+        case 12:
+            return 'December'
+        default:
+            throw new MonthException('Wrong data')
+    }
 }
 
 try {
-    if (checkAge('')) {
-        alert('Access granted')
-    }
+    console.log(showMonthName(14));
 } catch (error) {
-    alert(error.name + '\n' + error.message)
+    console.log(error.name + ' ' + error.message);
 }
