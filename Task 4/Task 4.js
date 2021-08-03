@@ -84,27 +84,27 @@
 // }
 
 // Task 4
-
-function showUser(id) {
-    if (id > 0) {
-        return true
-    } else{
-        throw new Error("ID must not be negative:" + id)
-    }
-}
-
-function showUsers(ids) {
-    for (let i = 0; i < ids.length; i++) {
-        try {
-            showUser(ids[i])
-        } catch (error) {
-            ids.splice(i, 1)
-            console.log(error.name + ' ' + error.message)
-        }
-    }
-    console.log(ids)
-}
-
-showUsers([7, -12, 44, 22])
+//
+// function showUser(id) {
+//     if (id > 0) {
+//         return true
+//     } else{
+//         throw new Error("ID must not be negative:" + id)
+//     }
+// }
+//
+// function showUsers(ids) {
+//     for (let i = 0; i < ids.length; i++) {
+//         try {
+//             showUser(ids[i])
+//         } catch (error) {
+//             ids.splice(i, 1)
+//             console.log(error.name + ' ' + error.message)
+//         }
+//     }
+//     console.log(ids)
+// }
+//
+// showUsers([7, -12, 44, 22])
 
 
