@@ -4,5 +4,5 @@
 // document.body.children[1].innerText = 'Last'
 
 // Task 2
-document.getElementsByClassName("image")[0].src="cat.jpg";
-
+document.querySelector(".image").src ="cat.jpg";
+alert(document.querySelector(".image").outerHTML)
