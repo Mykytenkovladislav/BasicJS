@@ -14,3 +14,11 @@
 // }
 
 // Task 4
+// Variant 1
+// let list = document.getElementById('list').children
+// let text = `${list[0].innerHTML}, ${list[4].innerText}, ${list[1].innerText}, ${list[3].innerText}, ${list[2].innerText}`
+// console.log(text)
+// Variant 2
+// let list = document.querySelectorAll('li');
+// let text = `${list[0].innerHTML}, ${list[4].innerText}, ${list[1].innerText}, ${list[3].innerText}, ${list[2].innerText}`
+// console.log(text)
