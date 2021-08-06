@@ -37,14 +37,25 @@
 // document.querySelector("span").style.visibility = "hidden";
 
 // Task 6
-let text1 = prompt('Text 1:')
-let text2 = prompt('Text 2:')
+// let text1 = prompt('Text 1:')
+// let text2 = prompt('Text 2:')
+//
+// let inputs = document.querySelectorAll('input')
+// inputs[0].setAttribute('value', text1)
+// inputs[1].setAttribute('value', text2)
+// console.log(inputs[1].outerHTML)
+// let inputValue1 = document.getElementById('input1').value
+// let inputValue2 = document.getElementById('input2').value
+// inputs[0].setAttribute('value', inputValue2)
+// inputs[1].setAttribute('value', inputValue1)
 
-let inputs = document.querySelectorAll('input')
-inputs[0].setAttribute('value', text1)
-inputs[1].setAttribute('value', text2)
-console.log(inputs[1].outerHTML)
-let inputValue1 = document.getElementById('input1').value
-let inputValue2 = document.getElementById('input2').value
-inputs[0].setAttribute('value', inputValue2)
-inputs[1].setAttribute('value', inputValue1)
+// Task 7
+document.body = document.createElement("body");
+let htmlPage = `
+<main class="mainClass check item">
+    <div id="myDiv">
+        <p>First paragraph</p>
+    </div>
+</main>
+`
+document.body.innerHTML = htmlPage
