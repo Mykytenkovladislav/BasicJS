@@ -50,3 +50,21 @@
 //     let value = document.body.querySelector('#cars').value
 //     document.body.querySelector(`option[value=${value}]`).remove()
 // })
+
+// Task 5
+// let button = document.body.querySelector('input')
+// button.addEventListener("mouseenter", () => {
+//     let onClickText = document.createElement('h1')
+//     onClickText.innerHTML = 'Mouse on me'
+//     document.body.appendChild(onClickText)
+// },)
+// button.addEventListener("click", () => {
+//     let onClickText = document.createElement('h1')
+//     onClickText.innerHTML = 'I was pressed'
+//     document.body.appendChild(onClickText)
+// },)
+// button.addEventListener("mouseleave", () => {
+//     let onClickText = document.createElement('h1')
+//     onClickText.innerHTML = 'Mouse is not on me!'
+//     document.body.appendChild(onClickText)
+// },)
