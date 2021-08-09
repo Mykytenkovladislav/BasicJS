@@ -18,6 +18,8 @@
 //     paragraph.style.fontSize = '20px'
 //     paragraph.style.fontFamily = 'Comic Sans MS'
 // }
+
+// Task 3
 // let beforeHoldingMouse
 // let buttons = document.querySelectorAll('button');
 // buttons[0].addEventListener("click", () => {
@@ -43,6 +45,8 @@
 //     }
 // )
 
-// Task 3
-
-
+// Task 4
+// document.body.querySelector('input').addEventListener("click", () => {
+//     let value = document.body.querySelector('#cars').value
+//     document.body.querySelector(`option[value=${value}]`).remove()
+// })
