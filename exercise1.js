@@ -68,3 +68,40 @@
 //     onClickText.innerHTML = 'Mouse is not on me!'
 //     document.body.appendChild(onClickText)
 // },)
+
+// Task 6
+// window.addEventListener('resize', ()=>{
+//     let newWidth = window.innerWidth;
+//     let newHeight = window.innerHeight;
+//     let resized = document.createElement('p')
+//     resized.innerHTML = `New width: ${newWidth}. New height: ${newHeight}.`
+//     document.body.appendChild(resized)
+// })
+
+// Task 7
+let cities = {
+    Germany: ["Berlin", "Augsburg", "Munich", "Dresden"],
+    USA: ["New York", "Washington", "Boston", "Chikago"],
+    Ukraine: ["Kharkiv", "Lviv", "Kiev", "Odessa"]
+}
+let country = document.body.querySelector('#country')
+let city = document.body.querySelector('#city')
+window.onload = selectCountry;
+country.onchange = selectCountry;
+
+function selectCountry() {
+    city.innerHTML = '';
+    let c = this.value || "Germany", o;
+    for (let i = 0; i < cities[c].length; i++) {
+        o = new Option(cities[c][i], i, false, false);
+        city.add(o);
+    }
+}
+
+let parag = document.querySelector("p");
+function myFunc() {
+
+    parag.innerHTML = "";
+    parag.innerHTML = country.options[country.selectedIndex].text + ', ' + city.options[city.selectedIndex].text;
+}
+
