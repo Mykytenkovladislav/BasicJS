@@ -18,4 +18,31 @@
 //     paragraph.style.fontSize = '20px'
 //     paragraph.style.fontFamily = 'Comic Sans MS'
 // }
+// let beforeHoldingMouse
+// let buttons = document.querySelectorAll('button');
+// buttons[0].addEventListener("click", () => {
+//     document.body.style.backgroundColor = '#3366ff'
+// })
+// buttons[1].addEventListener("dblclick", () => {
+//     document.body.style.backgroundColor = '#f81cdb'
+// })
+// buttons[2].addEventListener("mousedown", () => {
+//     beforeHoldingMouse = document.body.style.backgroundColor
+//     document.body.style.backgroundColor = '#673713'
+// })
+// buttons[2].addEventListener("mouseup", () => {
+//     document.body.style.backgroundColor = beforeHoldingMouse
+// },)
+// document.querySelector('a').addEventListener('mouseenter', () => {
+//         beforeHoldingMouse = document.body.style.backgroundColor
+//         document.body.style.backgroundColor = '#f6d000'
+//     }
+// )
+// document.querySelector('a').addEventListener('mouseleave', () => {
+//         document.body.style.backgroundColor = beforeHoldingMouse
+//     }
+// )
+
+// Task 3
+
 
